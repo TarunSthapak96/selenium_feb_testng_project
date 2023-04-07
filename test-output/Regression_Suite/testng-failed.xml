@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Regression_Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <test thread-count="2" parallel="tests" name="Login : OpenMRS(failed)" verbose="4">
+    <classes>
+      <class name="com.itviewtesting.LoginOpenMRS">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="loginOpenMRS_Admin"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.itviewtesting.LoginOpenMRS -->
+    </classes>
+  </test> <!-- Login : OpenMRS(failed) -->
+  <test thread-count="2" parallel="tests" name="Login : Mutual Fund(failed)" verbose="4">
+    <classes>
+      <class name="com.itviewtesting.LoginMutualFund">
+        <methods>
+          <include name="loginTestUser"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+          <include name="loginAdmin"/>
+          <include name="loginJsmith"/>
+        </methods>
+      </class> <!-- com.itviewtesting.LoginMutualFund -->
+    </classes>
+  </test> <!-- Login : Mutual Fund(failed) -->
+</suite> <!-- Failed suite [Regression_Suite] -->

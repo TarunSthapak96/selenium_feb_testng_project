@@ -1,0 +1,1 @@
+package assignment_on_assertion;
